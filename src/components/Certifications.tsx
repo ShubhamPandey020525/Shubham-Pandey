@@ -37,7 +37,7 @@ export const Certifications = () => {
                   </h3>
                   <p className="text-slate-500 text-base">{cert.issuer}</p>
                 </div>
-                <span className="flex items-center gap-2 text-navy text-base font-semibold px-5 py-2 bg-navy/10 border border-navy/30 rounded-full hover:bg-navy hover:text-white transition-all">
+                <span className="flex items-center gap-2 text-navy text-base font-semibold px-5 py-2 bg-white border border-navy/30 rounded-full hover:bg-navy hover:text-white hover:border-navy transition-all">
                   Verify
                   <ExternalLink className="w-4 h-4" />
                 </span>
