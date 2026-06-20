@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Sparkles, Code2, Cpu, Database, BrainCircuit, FolderGit2, Award, GraduationCap, Briefcase } from "lucide-react";
+import { Sparkles, FolderGit2, Award, GraduationCap, Briefcase } from "lucide-react";
 import { professionalSummary } from "../data";
 import { SectionHeading } from "./SectionHeading";
 
