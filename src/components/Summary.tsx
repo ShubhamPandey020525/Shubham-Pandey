@@ -54,7 +54,7 @@ export const Summary = () => {
             {highlights.map((highlight, i) => (
               <div
                 key={i}
-                className="flex items-center gap-4 bg-white/70 border border-navy/10 rounded-2xl p-6"
+                className="flex items-center gap-4 bg-white border border-navy/20 rounded-2xl p-6"
               >
                 {highlight.icon}
                 <span className="text-slate-800 text-lg font-medium">{highlight.text}</span>

@@ -25,7 +25,7 @@ export const Achievements = () => {
               key={i}
               variants={fadeUp}
               transition={{ duration: 0.6 }}
-              className="flex gap-4 items-start bg-white/80 border border-navy/10 rounded-2xl p-6"
+              className="flex gap-4 items-start bg-white border border-navy/20 rounded-2xl p-6"
             >
               <Sparkles className="w-6 h-6 text-navy shrink-0" />
               <span className="text-slate-800 text-lg">{achievement}</span>

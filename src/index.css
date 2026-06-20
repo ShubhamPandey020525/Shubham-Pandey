@@ -18,6 +18,11 @@ body {
 
 * {
   box-sizing: border-box;
+  /* Prevent any default opacity changes on hover for all elements */
+}
+
+*:hover {
+  opacity: 1 !important;
 }
 
 @keyframes float {
