@@ -155,13 +155,16 @@ export const Projects = () => {
                   </span>
                 </div>
                 <a
-                  href={projects[4].github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 bg-navy/10 rounded-full text-slate-600 hover:text-white hover:bg-navy transition-all"
-                >
-                  <Github className="w-5 h-5" />
-                </a>
+                    href={projects[4].github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ backgroundColor: 'rgba(20, 52, 100, 0.1)' }}
+                    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#1e4a8a')}
+                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = 'rgba(20, 52, 100, 0.1)')}
+                    className="p-2 rounded-full text-slate-600 hover:text-white transition-all"
+                  >
+                    <Github className="w-5 h-5" />
+                  </a>
               </div>
               <div className="flex flex-wrap gap-1.5 mb-4">
                 {projects[4].stack.map((tech, j) => (
