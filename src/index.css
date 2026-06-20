@@ -19,9 +19,14 @@ body {
 * {
   box-sizing: border-box;
   /* Prevent any default opacity changes on hover for all elements */
+  opacity: 1 !important;
 }
 
-*:hover {
+*:hover,
+*:active,
+*:focus,
+*:focus-within,
+*:focus-visible {
   opacity: 1 !important;
 }
 
