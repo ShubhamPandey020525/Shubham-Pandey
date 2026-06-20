@@ -12,13 +12,31 @@ export const Footer = () => {
           <div className="flex gap-4 sm:gap-6 lg:gap-10 text-slate-600">
             <a
               href={`tel:${personalInfo.phone}`}
-              className="p-3 sm:p-4 bg-white border border-navy/20 rounded-full hover:text-white hover:bg-navy transition-all"
+              style={{ backgroundColor: '#ffffff' }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.backgroundColor = '#1e4a8a';
+                e.currentTarget.style.borderColor = '#1e4a8a';
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.backgroundColor = '#ffffff';
+                e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.2)';
+              }}
+              className="p-3 sm:p-4 border border-navy/20 rounded-full hover:text-white transition-all"
             >
               <Phone className="w-6 h-6 sm:w-8 sm:h-8" />
             </a>
             <a
               href={`mailto:${personalInfo.email}`}
-              className="p-3 sm:p-4 bg-white border border-navy/20 rounded-full hover:text-white hover:bg-navy transition-all"
+              style={{ backgroundColor: '#ffffff' }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.backgroundColor = '#1e4a8a';
+                e.currentTarget.style.borderColor = '#1e4a8a';
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.backgroundColor = '#ffffff';
+                e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.2)';
+              }}
+              className="p-3 sm:p-4 border border-navy/20 rounded-full hover:text-white transition-all"
             >
               <Mail className="w-6 h-6 sm:w-8 sm:h-8" />
             </a>
@@ -26,7 +44,16 @@ export const Footer = () => {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 sm:p-4 bg-white border border-navy/20 rounded-full hover:text-white hover:bg-navy transition-all"
+              style={{ backgroundColor: '#ffffff' }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.backgroundColor = '#1e4a8a';
+                e.currentTarget.style.borderColor = '#1e4a8a';
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.backgroundColor = '#ffffff';
+                e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.2)';
+              }}
+              className="p-3 sm:p-4 border border-navy/20 rounded-full hover:text-white transition-all"
             >
               <Linkedin className="w-6 h-6 sm:w-8 sm:h-8" />
             </a>
@@ -34,7 +61,16 @@ export const Footer = () => {
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 sm:p-4 bg-white border border-navy/20 rounded-full hover:text-white hover:bg-navy transition-all"
+              style={{ backgroundColor: '#ffffff' }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.backgroundColor = '#1e4a8a';
+                e.currentTarget.style.borderColor = '#1e4a8a';
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.backgroundColor = '#ffffff';
+                e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.2)';
+              }}
+              className="p-3 sm:p-4 border border-navy/20 rounded-full hover:text-white transition-all"
             >
               <Github className="w-6 h-6 sm:w-8 sm:h-8" />
             </a>

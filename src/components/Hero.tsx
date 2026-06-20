@@ -38,14 +38,32 @@ export const Hero = () => {
             >
               <a
                 href={`tel:${personalInfo.phone}`}
-                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 bg-white border border-navy/30 rounded-full hover:bg-navy hover:text-white hover:border-navy transition-all text-sm sm:text-base"
+                style={{ backgroundColor: '#ffffff' }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = '#1e4a8a';
+                  e.currentTarget.style.borderColor = '#1e4a8a';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = '#ffffff';
+                  e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.3)';
+                }}
+                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 border border-navy/30 rounded-full hover:text-white transition-all text-sm sm:text-base"
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span className="font-mono text-xs sm:text-base">{personalInfo.phone}</span>
               </a>
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 bg-white border border-navy/30 rounded-full hover:bg-navy hover:text-white hover:border-navy transition-all text-sm sm:text-base"
+                style={{ backgroundColor: '#ffffff' }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = '#1e4a8a';
+                  e.currentTarget.style.borderColor = '#1e4a8a';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = '#ffffff';
+                  e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.3)';
+                }}
+                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 border border-navy/30 rounded-full hover:text-white transition-all text-sm sm:text-base"
               >
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span className="text-xs sm:text-base">{personalInfo.email}</span>
@@ -54,7 +72,16 @@ export const Hero = () => {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 bg-white border border-navy/30 rounded-full hover:bg-navy hover:text-white hover:border-navy transition-all text-sm sm:text-base"
+                style={{ backgroundColor: '#ffffff' }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = '#1e4a8a';
+                  e.currentTarget.style.borderColor = '#1e4a8a';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = '#ffffff';
+                  e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.3)';
+                }}
+                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 border border-navy/30 rounded-full hover:text-white transition-all text-sm sm:text-base"
               >
                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span className="text-xs sm:text-base">LinkedIn</span>
@@ -63,7 +90,16 @@ export const Hero = () => {
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 bg-white border border-navy/30 rounded-full hover:bg-navy hover:text-white hover:border-navy transition-all text-sm sm:text-base"
+                style={{ backgroundColor: '#ffffff' }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = '#1e4a8a';
+                  e.currentTarget.style.borderColor = '#1e4a8a';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = '#ffffff';
+                  e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.3)';
+                }}
+                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 border border-navy/30 rounded-full hover:text-white transition-all text-sm sm:text-base"
               >
                 <Github className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span className="text-xs sm:text-base">GitHub</span>

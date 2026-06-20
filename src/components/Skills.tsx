@@ -28,7 +28,16 @@ export const Skills = () => {
                 {skills.map((skill, j) => (
                   <span
                     key={j}
-                    className="px-5 py-2 bg-white border border-navy/30 rounded-full text-base font-mono text-navy hover:bg-navy hover:text-white hover:border-navy transition-all cursor-default"
+                    style={{ backgroundColor: '#ffffff' }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.backgroundColor = '#1e4a8a';
+                      e.currentTarget.style.borderColor = '#1e4a8a';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.backgroundColor = '#ffffff';
+                      e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.3)';
+                    }}
+                    className="px-5 py-2 border border-navy/30 rounded-full text-base font-mono text-navy hover:text-white transition-all cursor-default"
                   >
                     {skill}
                   </span>

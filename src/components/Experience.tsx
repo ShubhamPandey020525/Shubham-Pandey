@@ -42,7 +42,16 @@ export const Experience = () => {
                     href={exp.certificateLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-5 py-2 bg-white border border-navy/30 rounded-full text-navy hover:bg-navy hover:text-white hover:border-navy transition-all font-semibold text-sm"
+                    style={{ backgroundColor: '#ffffff' }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.backgroundColor = '#1e4a8a';
+                      e.currentTarget.style.borderColor = '#1e4a8a';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.backgroundColor = '#ffffff';
+                      e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.3)';
+                    }}
+                    className="flex items-center gap-2 px-5 py-2 border border-navy/30 rounded-full text-navy hover:text-white transition-all font-semibold text-sm"
                   >
                     View Certificate
                     <ExternalLink className="w-4 h-4" />

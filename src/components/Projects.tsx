@@ -42,7 +42,10 @@ export const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-navy/10 rounded-full text-slate-600 hover:text-white hover:bg-navy transition-all"
+                    style={{ backgroundColor: 'rgba(20, 52, 100, 0.1)' }}
+                    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#1e4a8a')}
+                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = 'rgba(20, 52, 100, 0.1)')}
+                    className="p-2 rounded-full text-slate-600 hover:text-white transition-all"
                   >
                     <Github className="w-5 h-5" />
                   </a>
@@ -98,7 +101,10 @@ export const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-navy/10 rounded-full text-slate-600 hover:text-white hover:bg-navy transition-all"
+                    style={{ backgroundColor: 'rgba(20, 52, 100, 0.1)' }}
+                    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#1e4a8a')}
+                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = 'rgba(20, 52, 100, 0.1)')}
+                    className="p-2 rounded-full text-slate-600 hover:text-white transition-all"
                   >
                     <Github className="w-5 h-5" />
                   </a>
