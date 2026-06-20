@@ -115,7 +115,10 @@ export const Hero = () => {
                 href="/Resume_AIML.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 sm:gap-3 px-5 sm:px-6 py-2.5 sm:py-3 bg-navy text-white border border-navy rounded-full hover:bg-navyLight transition-all font-semibold text-sm sm:text-base"
+                style={{ backgroundColor: '#143464' }}
+                onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#1e4a8a'}
+                onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#143464'}
+                className="flex items-center gap-2 sm:gap-3 px-5 sm:px-6 py-2.5 sm:py-3 text-white border border-navy rounded-full transition-all font-semibold text-sm sm:text-base"
               >
                 Click Here For Resume
               </a>
