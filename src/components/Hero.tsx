@@ -112,7 +112,7 @@ export const Hero = () => {
               className="flex flex-wrap gap-3 sm:gap-4 pt-4 sm:pt-6 justify-center md:justify-start"
             >
               <a
-                href="/final_shubh_resume.pdf"
+                href="/resume2006.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ backgroundColor: '#143464' }}
