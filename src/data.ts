@@ -197,7 +197,9 @@ export const projects = [
     github: "https://github.com/ShubhamPandey020525/my_portfolio",
     stack: ["React", "Vite", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide React"],
     bullets: [
-      "Engineered a production-ready personal hub that acts as a comprehensive live interactive deployment of all compressed projects, frameworks, and metrics listed across this resume.",
+      "Engineered a production-ready personal hub acting as a comprehensive interactive showcase of active AI/ML projects and credentials.",
+      "Designed a responsive, high-performance UI using <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>.",
+      "Integrated fluid transitions and sleek micro-animations via <strong>Framer Motion</strong> to deliver a highly premium user experience.",
     ],
   },
 ];
