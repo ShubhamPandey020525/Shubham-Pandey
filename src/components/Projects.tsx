@@ -18,156 +18,38 @@ export const Projects = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
           transition={{ staggerChildren: 0.15 }}
-          className="space-y-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
-          {/* First Row - 2 Projects */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projects.slice(0, 2).map((project, i) => (
-              <motion.div
-                key={i}
-                variants={fadeUp}
-                transition={{ duration: 0.6 }}
-                className="bg-white border border-navy/15 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col"
-              >
-                <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <h3 className="font-display text-xl font-bold mb-1">
-                      {project.title}
-                    </h3>
-                    <span className="text-slate-500 font-mono text-sm">
-                      {project.date}
-                    </span>
-                  </div>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ backgroundColor: 'rgba(20, 52, 100, 0.1)' }}
-                    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#1e4a8a')}
-                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = 'rgba(20, 52, 100, 0.1)')}
-                    className="p-2 rounded-full text-slate-600 hover:text-white transition-all"
-                  >
-                    <Github className="w-5 h-5" />
-                  </a>
-                </div>
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  {project.stack.map((tech, j) => (
-                    <span
-                      key={j}
-                      className="px-2.5 py-0.5 bg-navy/10 border border-navy/30 rounded-full text-xs font-mono text-navy"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <ul className="space-y-2 text-slate-700 text-sm flex-1">
-                  {project.bullets.map((bullet, j) => (
-                    <li key={j} className="flex gap-2">
-                      <span className="text-navy mt-1">•</span>
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: bullet.replace(
-                            /<strong>([^<]+)<\/strong>/g,
-                            '<strong class="text-navy font-semibold">$1</strong>'
-                          ),
-                        }}
-                      />
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Second Row - 2 Projects */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projects.slice(2, 4).map((project, i) => (
-              <motion.div
-                key={i + 2}
-                variants={fadeUp}
-                transition={{ duration: 0.6, delay: 0.15 }}
-                className="bg-white border border-navy/15 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col"
-              >
-                <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <h3 className="font-display text-xl font-bold mb-1">
-                      {project.title}
-                    </h3>
-                    <span className="text-slate-500 font-mono text-sm">
-                      {project.date}
-                    </span>
-                  </div>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ backgroundColor: 'rgba(20, 52, 100, 0.1)' }}
-                    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#1e4a8a')}
-                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = 'rgba(20, 52, 100, 0.1)')}
-                    className="p-2 rounded-full text-slate-600 hover:text-white transition-all"
-                  >
-                    <Github className="w-5 h-5" />
-                  </a>
-                </div>
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  {project.stack.map((tech, j) => (
-                    <span
-                      key={j}
-                      className="px-2.5 py-0.5 bg-navy/10 border border-navy/30 rounded-full text-xs font-mono text-navy"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <ul className="space-y-2 text-slate-700 text-sm flex-1">
-                  {project.bullets.map((bullet, j) => (
-                    <li key={j} className="flex gap-2">
-                      <span className="text-navy mt-1">•</span>
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: bullet.replace(
-                            /<strong>([^<]+)<\/strong>/g,
-                            '<strong class="text-navy font-semibold">$1</strong>'
-                          ),
-                        }}
-                      />
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Third Row - 1 Centered Project */}
-          <div className="flex justify-center">
+          {projects.map((project, i) => (
             <motion.div
+              key={i}
               variants={fadeUp}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-white border border-navy/15 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col w-full md:max-w-[600px]"
+              transition={{ duration: 0.6 }}
+              className="bg-white border border-navy/15 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col"
             >
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h3 className="font-display text-xl font-bold mb-1">
-                    {projects[4].title}
+                    {project.title}
                   </h3>
                   <span className="text-slate-500 font-mono text-sm">
-                    {projects[4].date}
+                    {project.date}
                   </span>
                 </div>
                 <a
-                    href={projects[4].github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ backgroundColor: 'rgba(20, 52, 100, 0.1)' }}
-                    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#1e4a8a')}
-                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = 'rgba(20, 52, 100, 0.1)')}
-                    className="p-2 rounded-full text-slate-600 hover:text-white transition-all"
-                  >
-                    <Github className="w-5 h-5" />
-                  </a>
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ backgroundColor: 'rgba(20, 52, 100, 0.1)' }}
+                  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#1e4a8a')}
+                  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = 'rgba(20, 52, 100, 0.1)')}
+                  className="p-2 rounded-full text-slate-600 hover:text-white transition-all"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
               </div>
               <div className="flex flex-wrap gap-1.5 mb-4">
-                {projects[4].stack.map((tech, j) => (
+                {project.stack.map((tech, j) => (
                   <span
                     key={j}
                     className="px-2.5 py-0.5 bg-navy/10 border border-navy/30 rounded-full text-xs font-mono text-navy"
@@ -177,7 +59,7 @@ export const Projects = () => {
                 ))}
               </div>
               <ul className="space-y-2 text-slate-700 text-sm flex-1">
-                {projects[4].bullets.map((bullet, j) => (
+                {project.bullets.map((bullet, j) => (
                   <li key={j} className="flex gap-2">
                     <span className="text-navy mt-1">•</span>
                     <span
@@ -192,7 +74,7 @@ export const Projects = () => {
                 ))}
               </ul>
             </motion.div>
-          </div>
+          ))}
         </motion.div>
       </div>
     </section>

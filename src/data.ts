@@ -90,6 +90,27 @@ export const technicalSkills = {
 
 export const projects = [
   {
+    title: "AI Technical Interview Coach",
+    date: "July 2026",
+    github: "https://github.com/ShubhamPandey020525/Interview_Coach",
+    stack: [
+      "LangGraph",
+      "FastAPI",
+      "React 19",
+      "TypeScript",
+      "OpenCV",
+      "MediaPipe",
+      "Whisper",
+      "WebSockets",
+      "Tailwind CSS",
+    ],
+    bullets: [
+      "Engineered a full-stack mock interview simulator leveraging a <strong>LangGraph</strong> orchestrator to dynamically coordinate 8 specialized AI agents based on user performance.",
+      "Integrated <strong>OpenAI Whisper</strong> and custom audio analysis off-hot-path to track communication metrics including speaking pace (WPM), filler words, and clarity.",
+      "Implemented real-time computer vision pipelines with <strong>MediaPipe</strong> and <strong>OpenCV</strong> to evaluate candidate engagement, eye-contact ratio, and posture stability.",
+    ],
+  },
+  {
     title: "Finvexis AI",
     date: "April 2026",
     github: "https://github.com/Riruru612/Finvexis_AI",
