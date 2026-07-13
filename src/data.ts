@@ -90,7 +90,7 @@ export const technicalSkills = {
 
 export const projects = [
   {
-    title: "AI Technical Interview Coach",
+    title: "Interview Coach",
     date: "July 2026",
     github: "https://github.com/ShubhamPandey020525/Interview_Coach",
     stack: [
