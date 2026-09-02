@@ -11,7 +11,7 @@ const fadeUp = {
 const highlights = [
   { icon: <Briefcase className="w-6 h-6 text-navy" />, text: "2 Job Simulations: BCG X & JPMorgan Chase" },
   { icon: <FolderGit2 className="w-6 h-6 text-navy" />, text: "8 Complete Projects including this Portfolio" },
-  { icon: <Award className="w-6 h-6 text-navy" />, text: "5 Verified Professional Certifications" },
+  { icon: <Award className="w-6 h-6 text-navy" />, text: "16+ Verified Professional Certifications" },
   { icon: <Sparkles className="w-6 h-6 text-navy" />, text: "Smart India Hackathon Participant" },
   { icon: <GraduationCap className="w-6 h-6 text-navy" />, text: "Final Year Computer Science Engineering Student" },
 ];
