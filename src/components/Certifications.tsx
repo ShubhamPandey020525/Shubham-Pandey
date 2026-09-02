@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
-import { certifications } from "../data";
+import { certifications, personalInfo } from "../data";
 import { SectionHeading } from "./SectionHeading";
 
 const fadeUp = {
@@ -13,6 +13,15 @@ export const Certifications = () => {
     <section className="py-16 px-6" id="certifications">
       <div className="max-w-5xl mx-auto">
         <SectionHeading title="Certifications" id="certifications" />
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-slate-600 text-lg mb-10 text-center max-w-2xl mx-auto"
+        >
+          I have completed <strong>16+ professional certifications</strong>. To view the full list, please visit my <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-navy font-semibold hover:underline">LinkedIn profile</a>. Below are my top 5 most relevant certifications for the Applied AI Engineer field.
+        </motion.p>
         <motion.div
           initial="hidden"
           whileInView="visible"
