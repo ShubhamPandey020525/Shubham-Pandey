@@ -24,7 +24,7 @@ export const Hero = () => {
           <div className="flex-1 space-y-8 text-center md:text-left">
             <motion.div variants={fadeUp} transition={{ duration: 0.8 }}>
               <p className="text-navy font-mono text-sm sm:text-lg tracking-widest uppercase mb-4 sm:mb-6">
-                Aspiring AI/ML Engineer + Data Science
+                Applied AI Engineer
               </p>
               <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
                 {personalInfo.name}

@@ -7,7 +7,7 @@ export const personalInfo = {
 };
 
 export const professionalSummary =
-  "Aspiring AI/ML Engineer and final-year Computer Science Engineering student with experience in Agentic AI, Generative AI, Retrieval-Augmented Generation (RAG), Explainable AI (XAI), Computer Vision, Deep Learning, and Machine Learning, focused on building intelligent and scalable AI-powered applications.";
+  "Applied AI Engineer and final-year Computer Science Engineering student with experience in Agentic AI, Generative AI, Retrieval-Augmented Generation (RAG), Explainable AI (XAI), Computer Vision, Deep Learning, and Machine Learning, focused on building intelligent and scalable AI-powered applications.";
 
 export const education = [
   {
