@@ -7,7 +7,7 @@ export const personalInfo = {
 };
 
 export const professionalSummary =
-  "Aspiring AI/ML Engineer and final-year Computer Science Engineering student with experience in Agentic AI, Generative AI, Retrieval-Augmented Generation (RAG), Computer Vision, Deep Learning, and Machine Learning, focused on building intelligent and scalable AI-powered applications.";
+  "Aspiring AI/ML Engineer and final-year Computer Science Engineering student with experience in Agentic AI, Generative AI, Retrieval-Augmented Generation (RAG), Explainable AI (XAI), Computer Vision, Deep Learning, and Machine Learning, focused on building intelligent and scalable AI-powered applications.";
 
 export const education = [
   {
@@ -71,6 +71,8 @@ export const technicalSkills = {
   "Deep Learning & ML Libraries": [
     "PyTorch",
     "TensorFlow",
+    "XGBoost",
+    "SHAP",
     "Scikit-Learn",
     "Pandas",
     "NumPy",
@@ -151,6 +153,26 @@ export const projects = [
     ],
   },
   {
+    title: "Co-Drive",
+    date: "January 2026",
+    github: "https://github.com/ShubhamPandey020525/Co-Drive",
+    stack: [
+      "YOLO11n",
+      "Computer Vision",
+      "GPU Acceleration",
+      "Python",
+      "FastAPI",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+    ],
+    bullets: [
+      "Trained and custom-deployed a YOLO11n object detection model achieving a verified 99.05% mAP for real-time traffic sign recognition.",
+      "Built GPU-accelerated infrastructure supporting image, video, and live webcam stream pipelines with 19–25ms inference latency.",
+      "Implemented browser-compatible video streams using avc1 encoding alongside an animated dashboard utilizing Framer Motion.",
+    ],
+  },
+  {
     title: "MoodFlix",
     date: "March 2026",
     github: "https://github.com/ShubhamPandey020525/MoodFlix",
@@ -206,26 +228,6 @@ export const projects = [
       "Engineered a state-of-the-art agricultural intelligence platform achieving <strong>96.60% accuracy</strong> in classifying 16 distinct crop diseases via a <strong>PyTorch EfficientNet-B0</strong> architecture.",
       "Architected an asynchronous <strong>FastAPI</strong> backend delivering sub-2-second AI inference, coupled with robust data augmentation and preprocessing pipelines.",
       "Developed a cross-platform <strong>React</strong> interface utilizing the browser's MediaDevices API for seamless real-time field imagery capture and instant diagnosis.",
-    ],
-  },
-  {
-    title: "Co-Drive",
-    date: "January 2026",
-    github: "https://github.com/ShubhamPandey020525/Co-Drive",
-    stack: [
-      "YOLO11n",
-      "Computer Vision",
-      "GPU Acceleration",
-      "Python",
-      "FastAPI",
-      "React",
-      "Vite",
-      "Tailwind CSS",
-    ],
-    bullets: [
-      "Trained and custom-deployed a YOLO11n object detection model achieving a verified 99.05% mAP for real-time traffic sign recognition.",
-      "Built GPU-accelerated infrastructure supporting image, video, and live webcam stream pipelines with 19–25ms inference latency.",
-      "Implemented browser-compatible video streams using avc1 encoding alongside an animated dashboard utilizing Framer Motion.",
     ],
   },
   {
