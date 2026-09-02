@@ -90,6 +90,43 @@ export const technicalSkills = {
 
 export const projects = [
   {
+    title: "AI Credit Risk Assessment System",
+    date: "August 2026",
+    github: "https://github.com/ShubhamPandey020525/CreditRisk",
+    stack: [
+      "XGBoost",
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "SHAP",
+      "Scikit-Learn",
+      "Python",
+    ],
+    bullets: [
+      "Developed an end-to-end AI credit risk evaluation platform predicting loan defaults with <strong>93.82% accuracy</strong> using an optimized <strong>XGBoost</strong> classification pipeline.",
+      "Implemented a Business-Driven <strong>SHAP Explainability Engine</strong> to dynamically translate mathematical log-odds into transparent, human-readable insights and probability metrics.",
+      "Engineered a responsive <strong>React</strong> dashboard featuring dynamic Risk Waterfall charts, seamlessly bridging complex AI decision-making with business logic.",
+    ],
+  },
+  {
+    title: "AgriDiagnostix",
+    date: "August 2026",
+    github: "https://github.com/ShubhamPandey020525/AgriDiagnostix",
+    stack: [
+      "PyTorch",
+      "FastAPI",
+      "React",
+      "Vite",
+      "EfficientNet-B0",
+      "Python",
+    ],
+    bullets: [
+      "Engineered a state-of-the-art agricultural intelligence platform achieving <strong>96.60% accuracy</strong> in classifying 16 distinct crop diseases via a <strong>PyTorch EfficientNet-B0</strong> architecture.",
+      "Architected an asynchronous <strong>FastAPI</strong> backend delivering sub-2-second AI inference, coupled with robust data augmentation and preprocessing pipelines.",
+      "Developed a cross-platform <strong>React</strong> interface utilizing the browser's MediaDevices API for seamless real-time field imagery capture and instant diagnosis.",
+    ],
+  },
+  {
     title: "Interview Coach",
     date: "July 2026",
     github: "https://github.com/ShubhamPandey020525/Interview_Coach",
@@ -189,17 +226,6 @@ export const projects = [
       "Developed an intent-driven movie discovery system using TF-IDF, cosine similarity, and CountVectorizer for semantic matching.",
       "Reduced live metadata enrichment latency by 70% through asynchronous parallel requests using HTTPX and Asyncio frameworks.",
       "Integrated Grok LLM for conversational chat tracking, incorporated typo-handling via difflib fuzzy matching, and built local watchlists.",
-    ],
-  },
-  {
-    title: "My Portfolio",
-    date: "June 2026",
-    github: "https://github.com/ShubhamPandey020525/my_portfolio",
-    stack: ["React", "Vite", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide React"],
-    bullets: [
-      "Engineered a production-ready personal hub acting as a comprehensive interactive showcase of active AI/ML projects and credentials.",
-      "Designed a responsive, high-performance UI using <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>.",
-      "Integrated fluid transitions and sleek micro-animations via <strong>Framer Motion</strong> to deliver a highly premium user experience.",
     ],
   },
 ];
