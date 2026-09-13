@@ -33,11 +33,11 @@ export const education = [
 export const experience = [
   {
     company: "School Management System (Shiksha Bharti Sr. Sec. School)",
-    role: "AI/ML Engineer — AI & RAG Integration",
+    role: "AI/ML Engineer — AI, RAG & Predictive Models",
     date: "June 2026",
     bullets: [
-      "Integrated a RAG-based chatbot to automate parent query resolution, trained on school rules, notices, and exam circulars.",
-      "Developed and integrated ML models for early dropout/low-performance detection and fee-defaulter prediction using attendance, academic, and payment data, with results visualized via an interactive analytics dashboard.",
+      "Built a custom RAG-based chatbot to automate parent query resolution, trained on school rules, notices, and exam circulars.",
+      "Developed and deployed ML models for early dropout/low-performance detection and fee-defaulter prediction using attendance, academic, and payment data, with results visualized via an interactive analytics dashboard.",
     ],
   },
 ];
