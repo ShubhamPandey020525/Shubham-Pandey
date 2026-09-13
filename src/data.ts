@@ -32,8 +32,8 @@ export const education = [
 
 export const experience = [
   {
-    company: "Shiksha Bharti Senior Secondary School",
-    role: "AI/ML Engineer — School Management System",
+    company: "School Management System",
+    role: "AI/ML Engineer — Shiksha Bharti Senior Secondary School",
     date: "June 2026",
     bullets: [
       "Built a RAG-based chatbot to automate parent query resolution, trained on school rules, notices, and exam circulars.",
