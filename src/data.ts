@@ -32,12 +32,12 @@ export const education = [
 
 export const experience = [
   {
-    company: "School Management System (Shiksha Bharti Sr. Sec. School)",
-    role: "AI/ML Engineer — AI, RAG & Predictive Models",
+    company: "Shiksha Bharti Senior Secondary School, Khatima, Uttarakhand",
+    role: "AI/ML Engineer Intern — AI, RAG & Predictive Models",
     date: "June 2026",
     bullets: [
-      "Built a custom RAG-based chatbot to automate parent query resolution, trained on school rules, notices, and exam circulars.",
-      "Developed and deployed ML models for early dropout/low-performance detection and fee-defaulter prediction using attendance, academic, and payment data, with results visualized via an interactive analytics dashboard.",
+      "Integrated AI capabilities into the existing School Management System by architecting and deploying a custom RAG-based chatbot to automate parent query resolution, trained on school rules, notices, and exam circulars.",
+      "Developed and deployed predictive ML models for early dropout detection, low-performance forecasting, and fee-defaulter prediction using attendance, academic, and payment data, with results visualized via an interactive analytics dashboard.",
     ],
   },
 ];
