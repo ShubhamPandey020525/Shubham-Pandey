@@ -24,7 +24,7 @@ export const Hero = () => {
           <div className="flex-1 space-y-8 text-center md:text-left">
             <motion.div variants={fadeUp} transition={{ duration: 0.8 }}>
               <p className="text-navy font-mono text-sm sm:text-lg tracking-widest uppercase mb-4 sm:mb-6">
-                Applied AI Engineer
+                AI/ML Engineer
               </p>
               <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
                 {personalInfo.name}
@@ -112,7 +112,7 @@ export const Hero = () => {
               className="flex flex-wrap gap-3 sm:gap-4 pt-4 sm:pt-6 justify-center md:justify-start"
             >
               <a
-                href="/resume1307.pdf"
+                href="/Shubham_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ backgroundColor: '#143464' }}

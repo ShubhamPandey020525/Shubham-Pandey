@@ -9,11 +9,11 @@ const fadeUp = {
 };
 
 const highlights = [
-  { icon: <Briefcase className="w-6 h-6 text-navy" />, text: "2 Job Simulations: BCG X & JPMorgan Chase" },
+  { icon: <Briefcase className="w-6 h-6 text-navy" />, text: "AI/ML Experience & Industry Job Simulations" },
   { icon: <FolderGit2 className="w-6 h-6 text-navy" />, text: "8 Complete Projects including this Portfolio" },
   { icon: <Award className="w-6 h-6 text-navy" />, text: "16+ Verified Professional Certifications" },
   { icon: <Sparkles className="w-6 h-6 text-navy" />, text: "Smart India Hackathon Participant" },
-  { icon: <GraduationCap className="w-6 h-6 text-navy" />, text: "Final Year Computer Science Engineering Student" },
+  { icon: <GraduationCap className="w-6 h-6 text-navy" />, text: "B.Tech CSE (AIML) at Bennett University" },
 ];
 
 export const Summary = () => {
@@ -30,11 +30,12 @@ export const Summary = () => {
         >
           <motion.div variants={fadeUp} transition={{ duration: 0.6 }}>
             <p className="text-xl text-slate-700 leading-relaxed mb-8">
-              {professionalSummary.split(/(Agentic AI|Generative AI|Retrieval-Augmented Generation \(RAG\)|Computer Vision|Deep Learning|Machine Learning)/).map((part, i) => {
+              {professionalSummary.split(/(AI\/ML Engineer|Generative AI|Agentic AI|RAG|Computer Vision|Deep Learning|Machine Learning)/).map((part, i) => {
                 const isHighlight = [
+                  "AI/ML Engineer",
                   "Agentic AI",
                   "Generative AI",
-                  "Retrieval-Augmented Generation (RAG)",
+                  "RAG",
                   "Computer Vision",
                   "Deep Learning",
                   "Machine Learning",

@@ -7,14 +7,14 @@ export const personalInfo = {
 };
 
 export const professionalSummary =
-  "Applied AI Engineer and final-year Computer Science Engineering student with experience in Agentic AI, Generative AI, Retrieval-Augmented Generation (RAG), Explainable AI (XAI), Computer Vision, Deep Learning, and Machine Learning, focused on building intelligent and scalable AI-powered applications.";
+  "AI/ML Engineer specializing in Generative AI, Agentic AI, RAG, Machine Learning, Deep Learning, and Computer Vision, with experience building and deploying production-grade full-stack AI systems.";
 
 export const education = [
   {
-    institution: "Bennett University",
+    institution: "Bennett University, Greater Noida",
     dates: "2023–2027",
-    degree: "B.Tech in Computer Science Engineering",
-    score: "CGPA: 8.0/10",
+    degree: "B.Tech in Computer Science and Engineering (AIML)",
+    score: "CGPA: 8.01 / 10",
   },
   {
     institution: "Shiksha Bharati Senior Secondary School (CBSE)",
@@ -31,6 +31,15 @@ export const education = [
 ];
 
 export const experience = [
+  {
+    company: "Shiksha Bharti Senior Secondary School",
+    role: "AI/ML Engineer — School Management System",
+    date: "June 2026",
+    bullets: [
+      "Built a RAG-based chatbot to automate parent query resolution, trained on school rules, notices, and exam circulars.",
+      "Developed ML models for early dropout/low-performance detection and fee-defaulter prediction using attendance, academic, and payment data, with results visualized via an interactive analytics dashboard.",
+    ],
+  },
   {
     company: "BCG X (Boston Consulting Group)",
     role: "GenAI Project (Forage Job Simulation)",
@@ -60,34 +69,63 @@ export const experience = [
 ];
 
 export const technicalSkills = {
-  "Agentic AI & GenAI Frameworks": [
-    "LangChain",
+  "Generative AI & Agentic Systems": [
     "LangGraph",
-    "CrewAI",
-    "LLM API Integration",
-    "ChromaDB",
-    "FAISS",
+    "LangChain",
+    "Agentic Workflows",
+    "Multi-Agent Systems",
+    "RAG",
+    "System Prompting",
+    "Semantic Search",
+    "Groq API",
+    "OpenAI API",
+    "Whisper",
+    "Prompt Engineering",
+    "Vector Database",
   ],
-  "Deep Learning & ML Libraries": [
+  "Machine Learning, Deep Learning & Computer Vision": [
     "PyTorch",
     "TensorFlow",
+    "Scikit-Learn",
+    "Ultralytics YOLO",
+    "Neural Networks",
+    "Transfer Learning",
+    "OpenCV",
+    "MediaPipe",
+    "Object Detection",
     "XGBoost",
     "SHAP",
-    "Scikit-Learn",
-    "Pandas",
-    "NumPy",
+    "Sentence-Transformers",
   ],
-  "Programming Languages": ["Python", "C++", "JavaScript", "TypeScript"],
-  "Web Frameworks & Deployment": [
+  "Backend & Infrastructure": [
     "FastAPI",
-    "Flask",
-    "React",
-    "Vite",
-    "Tailwind CSS",
-    "Streamlit",
+    "Asynchronous APIs",
+    "RESTful Services",
+    "Microservices",
+    "Pydantic",
     "Uvicorn",
+    "WebSockets",
+    "Python",
+    "JavaScript",
+    "TypeScript",
   ],
-  "Databases & Developer Tools": ["MongoDB", "SQL", "Git", "GitHub", "Docker"],
+  "Databases & Developer Tools": [
+    "FAISS",
+    "ChromaDB",
+    "Git",
+    "GitHub",
+    "Postman",
+    "Vercel",
+    "Miniconda",
+    "VS Code",
+    "Claude Code",
+    "Antigravity",
+    "Cursor",
+    "Trae",
+    "Aider",
+    "Roo Code",
+    "Local LLMs",
+  ],
 };
 
 export const projects = [
@@ -98,18 +136,14 @@ export const projects = [
     stack: [
       "LangGraph",
       "FastAPI",
-      "React 19",
-      "TypeScript",
-      "OpenCV",
-      "MediaPipe",
-      "Whisper",
-      "WebSockets",
-      "Tailwind CSS",
+      "OpenAI",
+      "Edge TTS",
+      "OpenAI -Whisper",
+      "Multi-Agent System",
     ],
     bullets: [
-      "Engineered a full-stack mock interview simulator leveraging a <strong>LangGraph</strong> orchestrator to dynamically coordinate 8 specialized AI agents based on user performance.",
-      "Integrated <strong>OpenAI Whisper</strong> and custom audio analysis off-hot-path to track communication metrics including speaking pace (WPM), filler words, and clarity.",
-      "Implemented real-time computer vision pipelines with <strong>MediaPipe</strong> and <strong>OpenCV</strong> to evaluate candidate engagement, eye-contact ratio, and posture stability.",
+      "Architected an 8-agent <strong>LangGraph</strong> mock-interview platform generating resume-grounded technical, behavioral, and system-design questions, with adaptive escalation to deeper follow-ups when scores fall below 65%.",
+      "Developed a local <strong>Whisper</strong>-based speech-analytics pipeline measuring speaking pace (WPM) and filler-word usage, combined with LLM-based answer grading to generate personalized learning plans.",
     ],
   },
   {
@@ -117,80 +151,33 @@ export const projects = [
     date: "April 2026",
     github: "https://github.com/Riruru612/Finvexis_AI",
     stack: [
-      "LangChain",
-      "Multi-Agent Systems",
-      "Python",
       "FastAPI",
-      "Uvicorn",
-      "React",
-      "TypeScript",
-      "Vite",
+      "LangChain",
+      "Vector DB",
+      "Groq API",
+      "Multi-Agent System",
+      "Isolated Agents",
     ],
     bullets: [
-      "Built a full-stack enterprise intelligence platform integrating 4 core domains (Business, Finance, Sales, and HR) into a unified layer.",
-      "Designed modular, domain-isolated orchestration modules in FastAPI enabling scalable, independent automated workflow execution.",
-      "Engineered an executive-facing React dashboard featuring responsive tools for strategic business forecasting, budgeting, and KPI analytics.",
+      "Designed a full-stack, multi-domain AI platform unifying Business Strategy, Finance Automation, and Sales/HR workflows via 12 modular, domain-isolated, independently scalable AI agents.",
+      "Implemented multi-agent system architecture enabling independent scaling, orchestration, and coordination of forecasting, invoicing, and sales-assistance capabilities across business domains.",
     ],
   },
   {
-    title: "PolyDoc Chat",
+    title: "PolyDoc-Chat",
     date: "February 2026",
     github: "https://github.com/ShubhamPandey020525/PolyDoc-Chat",
     stack: [
       "LangChain",
       "ChromaDB",
-      "Groq API",
-      "Python",
-      "FastAPI",
-      "React",
-      "Tailwind CSS",
-      "Framer Motion",
+      "Groq (Llama 3.3 70B)",
+      "FAISS",
+      "Sentence Transformers",
+      "Multi Agent system",
     ],
     bullets: [
-      "Developed an enterprise document intelligence RAG ecosystem supporting PDF, DOCX, PPTX, CSV, TXT, and Markdown parsing.",
-      "Optimized pipeline using ChromaDB vector search and Llama 3.3 70B to achieve 0.69s end-to-end latency and 16.6ms retrieval latency.",
-      "Implemented local embedding generation via miniLM and engineered 100% citation-backed responses to eliminate hallucinations.",
-    ],
-  },
-  {
-    title: "Co-Drive",
-    date: "January 2026",
-    github: "https://github.com/ShubhamPandey020525/Co-Drive",
-    stack: [
-      "YOLO11n",
-      "Computer Vision",
-      "GPU Acceleration",
-      "Python",
-      "FastAPI",
-      "React",
-      "Vite",
-      "Tailwind CSS",
-    ],
-    bullets: [
-      "Trained and custom-deployed a YOLO11n object detection model achieving a verified 99.05% mAP for real-time traffic sign recognition.",
-      "Built GPU-accelerated infrastructure supporting image, video, and live webcam stream pipelines with 19–25ms inference latency.",
-      "Implemented browser-compatible video streams using avc1 encoding alongside an animated dashboard utilizing Framer Motion.",
-    ],
-  },
-  {
-    title: "MoodFlix",
-    date: "March 2026",
-    github: "https://github.com/ShubhamPandey020525/MoodFlix",
-    stack: [
-      "Grok API",
-      "Scikit-Learn",
-      "NLP",
-      "TF-IDF",
-      "Cosine Similarity",
-      "FastAPI",
-      "HTTPX",
-      "React",
-      "Framer Motion",
-    ],
-    bullets: [
-      "Developed an intent-driven movie discovery system using TF-IDF, cosine similarity, and CountVectorizer for semantic matching.",
-      "Reduced live metadata enrichment latency by 70% through asynchronous parallel requests using HTTPX and Asyncio frameworks.",
-      "Integrated Grok LLM for conversational chat tracking, incorporated typo-handling via difflib fuzzy matching, and built local watchlists.",
+      "Engineered a hallucination-resistant RAG pipeline ingesting PDF/DOCX/PPTX/CSV files at 446K+ characters/second using locally generated embeddings for complete data privacy across a benchmarked, multi-stage retrieval architecture.",
+      "Achieved 100% citation-backed responses with 0.69s average end-to-end query latency, ensuring fully source-cited, hallucination-resistant answers.",
     ],
   },
   {
@@ -199,17 +186,36 @@ export const projects = [
     github: "https://github.com/ShubhamPandey020525/CreditRisk",
     stack: [
       "XGBoost",
-      "FastAPI",
-      "React",
-      "TypeScript",
       "SHAP",
+      "FastAPI",
+      "Logistic Regression",
+      "Random Forest Classifier",
       "Scikit-Learn",
-      "Python",
+      "EDA",
+      "Pre-Processing",
     ],
     bullets: [
-      "Developed an end-to-end AI credit risk evaluation platform predicting loan defaults with <strong>93.82% accuracy</strong> using an optimized <strong>XGBoost</strong> classification pipeline.",
-      "Implemented a Business-Driven <strong>SHAP Explainability Engine</strong> to dynamically translate mathematical log-odds into transparent, human-readable insights and probability metrics.",
-      "Engineered a responsive <strong>React</strong> dashboard featuring dynamic Risk Waterfall charts, seamlessly bridging complex AI decision-making with business logic.",
+      "Rectified <strong>XGBoost</strong> loan default classifier achieving <strong>93.6% accuracy</strong> and <strong>0.95 ROC-AUC</strong> on 32,000+ records, outperforming Logistic Regression and Random Forest baselines.",
+      "Developed <strong>SHAP</strong>-based explainability engine converting log-odds into human-readable risk factors using custom React waterfall chart visualization.",
+    ],
+  },
+  {
+    title: "Co-Drive",
+    date: "January 2026",
+    github: "https://github.com/ShubhamPandey020525/Co-Drive",
+    stack: [
+      "YOLO11n",
+      "FastAPI",
+      "CUDA",
+      "Ultralytics",
+      "OpenCV",
+      "Fine-Tuning",
+      "EDA",
+      "Pre-Processing",
+    ],
+    bullets: [
+      "Fine-tuned a custom <strong>YOLO11n</strong> computer-vision model for real-time sign detection, reaching <strong>99.05% mAP</strong> accuracy at 19–25ms GPU inference latency.",
+      "Shipped a full-stack detection suite supporting image, video, and live webcam recognition through a unified React dashboard.",
     ],
   },
   {
@@ -218,16 +224,36 @@ export const projects = [
     github: "https://github.com/ShubhamPandey020525/AgriDiagnostix",
     stack: [
       "PyTorch",
-      "FastAPI",
-      "React",
-      "Vite",
       "EfficientNet-B0",
-      "Python",
+      "Scikit-Learn",
+      "Decision Trees",
+      "Random Forest",
+      "SVM",
+      "XGBoost",
+      "CNN",
+      "MobileNetV3",
     ],
     bullets: [
-      "Engineered a state-of-the-art agricultural intelligence platform achieving <strong>96.60% accuracy</strong> in classifying 16 distinct crop diseases via a <strong>PyTorch EfficientNet-B0</strong> architecture.",
-      "Architected an asynchronous <strong>FastAPI</strong> backend delivering sub-2-second AI inference, coupled with robust data augmentation and preprocessing pipelines.",
-      "Developed a cross-platform <strong>React</strong> interface utilizing the browser's MediaDevices API for seamless real-time field imagery capture and instant diagnosis.",
+      "Trained and benchmarked multiple models (Logistic Regression, Decision Tree, Random Forest, XGBoost, CNN, MobileNetV3) for 16-class crop disease diagnosis, with <strong>EfficientNet-B0</strong> achieving the best result (<strong>96.6% val. accuracy</strong>).",
+      "Shipped via <strong>FastAPI + React</strong> app enabling sub-2s live-camera diagnosis and treatment guidance for field use.",
+    ],
+  },
+  {
+    title: "MoodFlix",
+    date: "March 2026",
+    github: "https://github.com/ShubhamPandey020525/MoodFlix",
+    stack: [
+      "FastAPI",
+      "Grok LLM",
+      "Scikit-Learn",
+      "TF-IDF",
+      "Cosine Similarity",
+      "TMDB",
+      "Fuzzy Matching",
+    ],
+    bullets: [
+      "Constructed a mood-based movie recommendation engine combining <strong>TF-IDF</strong> vectorization, cosine similarity, and LLM-powered natural-language intent extraction.",
+      "Engineered an asynchronous <strong>FastAPI</strong> backend that reduced metadata-fetch latency by 70% through parallelized TMDB API calls.",
     ],
   },
   {
@@ -249,6 +275,18 @@ export const achievements = [
 ];
 
 export const certifications = [
+  {
+    title: "BCG X — GenAI Engineer Job Simulation",
+    issuer: "Forage",
+    verifyLink:
+      "https://www.theforage.com/completion-certificates/SKZxezskWgmFjRvj9/gabev3vXhuACr48eb_SKZxezskWgmFjRvj9_6a3112fb5c6812dbed7841e3_1781691472856_completion_certificate.pdf",
+  },
+  {
+    title: "JPMorgan Chase & Co. — Quantitative Research Analyst Job Simulation",
+    issuer: "Forage",
+    verifyLink:
+      "https://www.theforage.com/completion-certificates/Sj7temL583QAYpHXD/bWqaecPDbYAwSDqJy_Sj7temL583QAYpHXD_6a3112fb5c6812dbed7841e3_1781850143969_completion_certificate.pdf",
+  },
   {
     title: "Apply Generative Adversarial Networks (GANs)",
     issuer: "DeepLearning.AI",
