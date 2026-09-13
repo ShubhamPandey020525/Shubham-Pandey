@@ -20,7 +20,7 @@ export const Certifications = () => {
           transition={{ duration: 0.5 }}
           className="text-slate-600 text-lg mb-10 text-center max-w-2xl mx-auto"
         >
-          I have completed <strong>16+ professional certifications</strong>. To view the full list, please visit my <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-semibold hover:text-blue-800">LinkedIn profile</a>. Below are my featured certifications and industry job simulations in the AI/ML field.
+          I have completed <strong>18+ professional certifications</strong>. To view the full list, please visit my <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-semibold hover:text-blue-800">LinkedIn profile</a>. Below are my featured certifications and industry job simulations in the AI/ML field.
         </motion.p>
         <motion.div
           initial="hidden"
