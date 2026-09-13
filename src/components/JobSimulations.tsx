@@ -54,10 +54,10 @@ export const JobSimulations = () => {
                       href={sim.certificateLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-5 py-2 glass-card hover:text-accent transition-all font-semibold text-sm group"
+                      className="flex items-center gap-2 px-5 py-2 glass-card text-accent hover:text-accentAlt transition-all font-semibold text-sm group"
                     >
                       View Certificate
-                      <ExternalLink className="w-4 h-4 group-hover:text-accent transition-colors" />
+                      <ExternalLink className="w-4 h-4 transition-colors" />
                     </a>
                   )}
                 </div>

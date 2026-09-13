@@ -38,34 +38,34 @@ export const Hero = () => {
             >
               <a
                 href={`tel:${personalInfo.phone}`}
-                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card hover:text-slate-900 transition-all text-sm sm:text-base group"
+                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card text-accent hover:text-accentAlt transition-all text-sm sm:text-base group"
               >
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5 group-hover:text-accent transition-colors" />
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 transition-colors" />
                 <span className="font-mono text-xs sm:text-base">{personalInfo.phone}</span>
               </a>
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card hover:text-slate-900 transition-all text-sm sm:text-base group"
+                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card text-accent hover:text-accentAlt transition-all text-sm sm:text-base group"
               >
-                <Mail className="w-4 h-4 sm:w-5 sm:h-5 group-hover:text-accent transition-colors" />
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 transition-colors" />
                 <span className="text-xs sm:text-base">{personalInfo.email}</span>
               </a>
               <a
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card hover:text-slate-900 transition-all text-sm sm:text-base group"
+                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card text-accent hover:text-accentAlt transition-all text-sm sm:text-base group"
               >
-                <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 group-hover:text-accent transition-colors" />
+                <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 transition-colors" />
                 <span className="text-xs sm:text-base">LinkedIn</span>
               </a>
               <a
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card hover:text-slate-900 transition-all text-sm sm:text-base group"
+                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card text-accent hover:text-accentAlt transition-all text-sm sm:text-base group"
               >
-                <Github className="w-4 h-4 sm:w-5 sm:h-5 group-hover:text-accent transition-colors" />
+                <Github className="w-4 h-4 sm:w-5 sm:h-5 transition-colors" />
                 <span className="text-xs sm:text-base">GitHub</span>
               </a>
             </motion.div>

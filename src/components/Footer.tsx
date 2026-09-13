@@ -13,13 +13,13 @@ export const Footer = () => {
           <div className="flex gap-4 sm:gap-6 lg:gap-10 text-slate-400">
             <a
               href={`tel:${personalInfo.phone}`}
-              className="p-3 sm:p-4 glass-card hover:text-accent hover:shadow-glow transition-all group"
+              className="p-3 sm:p-4 glass-card text-accent hover:text-accentAlt hover:shadow-glow transition-all group"
             >
               <Phone className="w-6 h-6 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform" />
             </a>
             <a
               href={`mailto:${personalInfo.email}`}
-              className="p-3 sm:p-4 glass-card hover:text-accent hover:shadow-glow transition-all group"
+              className="p-3 sm:p-4 glass-card text-accent hover:text-accentAlt hover:shadow-glow transition-all group"
             >
               <Mail className="w-6 h-6 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform" />
             </a>
@@ -27,7 +27,7 @@ export const Footer = () => {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 sm:p-4 glass-card hover:text-accent hover:shadow-glow transition-all group"
+              className="p-3 sm:p-4 glass-card text-accent hover:text-accentAlt hover:shadow-glow transition-all group"
             >
               <Linkedin className="w-6 h-6 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform" />
             </a>
@@ -35,7 +35,7 @@ export const Footer = () => {
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 sm:p-4 glass-card hover:text-accent hover:shadow-glow transition-all group"
+              className="p-3 sm:p-4 glass-card text-accent hover:text-accentAlt hover:shadow-glow transition-all group"
             >
               <Github className="w-6 h-6 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform" />
             </a>

@@ -41,7 +41,7 @@ export const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full text-slate-400 hover:text-accent hover:bg-slate-100 hover:shadow-glow transition-all"
+                  className="p-2 rounded-full text-accent hover:text-accentAlt hover:bg-slate-100 hover:shadow-glow transition-all"
                 >
                   <Github className="w-5 h-5" />
                 </a>
