@@ -23,7 +23,7 @@ export const Hero = () => {
         >
           <div className="flex-1 space-y-8 text-center md:text-left">
             <motion.div variants={fadeUp} transition={{ duration: 0.8 }}>
-              <p className="text-accent font-mono text-sm sm:text-lg tracking-widest uppercase mb-4 sm:mb-6">
+              <p className="text-slate-900 font-mono text-sm sm:text-lg tracking-widest uppercase mb-4 sm:mb-6">
                 AI/ML Engineer
               </p>
               <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-4 sm:mb-6 leading-tight gradient-text">
@@ -34,18 +34,18 @@ export const Hero = () => {
             <motion.div
               variants={fadeUp}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex flex-wrap gap-3 sm:gap-4 items-center justify-center md:justify-start text-slate-600"
+              className="flex flex-wrap gap-3 sm:gap-4 items-center justify-center md:justify-start text-slate-900"
             >
               <a
                 href={`tel:${personalInfo.phone}`}
-                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card text-accent hover:text-accentAlt transition-all text-sm sm:text-base group"
+                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card text-slate-900 hover:text-slate-600 transition-all text-sm sm:text-base group"
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 transition-colors" />
                 <span className="font-mono text-xs sm:text-base">{personalInfo.phone}</span>
               </a>
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card text-accent hover:text-accentAlt transition-all text-sm sm:text-base group"
+                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card text-slate-900 hover:text-slate-600 transition-all text-sm sm:text-base group"
               >
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 transition-colors" />
                 <span className="text-xs sm:text-base">{personalInfo.email}</span>
@@ -54,7 +54,7 @@ export const Hero = () => {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card text-accent hover:text-accentAlt transition-all text-sm sm:text-base group"
+                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card text-blue-600 hover:text-slate-600 transition-all text-sm sm:text-base group"
               >
                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 transition-colors" />
                 <span className="text-xs sm:text-base">LinkedIn</span>
@@ -63,7 +63,7 @@ export const Hero = () => {
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card text-accent hover:text-accentAlt transition-all text-sm sm:text-base group"
+                className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 glass-card text-slate-900 hover:text-slate-600 transition-all text-sm sm:text-base group"
               >
                 <Github className="w-4 h-4 sm:w-5 sm:h-5 transition-colors" />
                 <span className="text-xs sm:text-base">GitHub</span>
@@ -79,7 +79,7 @@ export const Hero = () => {
                 href="/Shubham_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 sm:gap-3 px-5 sm:px-6 py-2.5 sm:py-3 text-slate-900 bg-gradient-to-r from-accent to-accentAlt rounded-full hover:shadow-glow transition-all font-semibold text-sm sm:text-base hover:-translate-y-1"
+                className="flex items-center gap-2 sm:gap-3 px-5 sm:px-6 py-2.5 sm:py-3 text-white bg-slate-900 rounded-full hover:shadow-glow transition-all font-semibold text-sm sm:text-base hover:-translate-y-1"
               >
                 Click Here For Resume
               </a>

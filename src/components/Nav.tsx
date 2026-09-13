@@ -52,7 +52,7 @@ export const Nav = () => {
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         <div className="font-display font-bold text-3xl tracking-tight text-slate-900">
-          <span className="text-accent">S</span>P
+          <span className="text-slate-900">S</span>P
         </div>
         
         {/* Desktop Menu */}
@@ -64,8 +64,8 @@ export const Nav = () => {
               onClick={() => setIsMenuOpen(false)}
               className={`font-body font-semibold text-base lg:text-lg transition-colors relative ${
                 (link.href === "#" && activeSection === "") || activeSection === link.href.slice(1)
-                  ? "text-accent"
-                  : "text-slate-400 hover:text-accent"
+                  ? "text-slate-900"
+                  : "text-slate-900 hover:text-slate-900"
               }`}
             >
               {link.name}
@@ -82,7 +82,7 @@ export const Nav = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden p-2 text-slate-600 hover:text-accent transition-colors"
+          className="md:hidden p-2 text-slate-900 hover:text-slate-900 transition-colors"
         >
           {isMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
         </button>
@@ -104,8 +104,8 @@ export const Nav = () => {
                 onClick={() => setIsMenuOpen(false)}
                 className={`block px-4 py-3 rounded-xl font-body font-semibold transition-colors ${
                   (link.href === "#" && activeSection === "") || activeSection === link.href.slice(1)
-                    ? "bg-slate-100 text-accent border border-slate-200"
-                    : "text-slate-400 hover:bg-slate-100 hover:text-accent"
+                    ? "bg-slate-100 text-slate-900 border border-slate-200"
+                    : "text-slate-900 hover:bg-slate-100 hover:text-slate-900"
                 }`}
               >
                 {link.name}

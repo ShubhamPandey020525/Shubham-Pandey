@@ -24,15 +24,15 @@ export const Education = () => {
           {education.map((edu, i) => (
             <motion.div key={i} variants={fadeUp} transition={{ duration: 0.6 }} className="relative">
               <div className="absolute -left-12 w-10 h-10 bg-white border-3 border-accent rounded-full flex items-center justify-center shadow-glow">
-                <GraduationCap className="w-5 h-5 text-accent" />
+                <GraduationCap className="w-5 h-5 text-slate-900" />
               </div>
               <div className="glass-card p-7">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
                   <h3 className="font-display text-2xl font-bold text-slate-900">{edu.institution}</h3>
-                  <span className="text-slate-400 font-mono text-base">{edu.dates}</span>
+                  <span className="text-slate-900 font-mono text-base">{edu.dates}</span>
                 </div>
-                <p className="text-accent font-semibold text-lg mb-2">{edu.degree}</p>
-                <p className="text-slate-600 text-base">{edu.score}</p>
+                <p className="text-slate-900 font-semibold text-lg mb-2">{edu.degree}</p>
+                <p className="text-slate-900 text-base">{edu.score}</p>
               </div>
             </motion.div>
           ))}

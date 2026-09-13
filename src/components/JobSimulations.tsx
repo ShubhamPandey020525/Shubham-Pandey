@@ -29,7 +29,7 @@ export const JobSimulations = () => {
               className="relative"
             >
               <div className="absolute -left-12 w-10 h-10 bg-white border-3 border-accent rounded-full flex items-center justify-center shadow-glow">
-                <Briefcase className="w-5 h-5 text-accent" />
+                <Briefcase className="w-5 h-5 text-slate-900" />
               </div>
               <div className="glass-card p-7">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6 mb-6">
@@ -38,15 +38,15 @@ export const JobSimulations = () => {
                     <h3 className="font-display text-2xl font-bold text-slate-900">
                       {sim.company}
                     </h3>
-                    <span className="flex items-center gap-1.5 px-3 py-0.5 bg-accent/10 border border-accent/20 rounded-full text-xs font-mono text-accent font-semibold">
+                    <span className="flex items-center gap-1.5 px-3 py-0.5 bg-accent/10 border border-accent/20 rounded-full text-xs font-mono text-slate-900 font-semibold">
                       <Briefcase className="w-3.5 h-3.5" />
                       Job Simulation
                     </span>
                   </div>
-                  <p className="text-accentAlt font-semibold text-lg">{sim.role}</p>
+                  <p className="text-slate-900Alt font-semibold text-lg">{sim.role}</p>
                 </div>
                 <div className="flex flex-col items-end gap-3">
-                  <span className="text-slate-400 font-mono text-base">
+                  <span className="text-slate-900 font-mono text-base">
                     {sim.date}
                   </span>
                   {sim.certificateLink && (
@@ -54,7 +54,7 @@ export const JobSimulations = () => {
                       href={sim.certificateLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-5 py-2 glass-card text-accent hover:text-accentAlt transition-all font-semibold text-sm group"
+                      className="flex items-center gap-2 px-5 py-2 glass-card text-slate-900 hover:text-slate-600 transition-all font-semibold text-sm group"
                     >
                       View Certificate
                       <ExternalLink className="w-4 h-4 transition-colors" />
@@ -62,10 +62,10 @@ export const JobSimulations = () => {
                   )}
                 </div>
               </div>
-              <ul className="space-y-3 text-slate-600 text-base">
+              <ul className="space-y-3 text-slate-900 text-base">
                 {sim.bullets.map((bullet, j) => (
                   <li key={j} className="flex gap-3">
-                    <span className="text-accent mt-1.5">•</span>
+                    <span className="text-slate-900 mt-1.5">•</span>
                     <span>{bullet}</span>
                   </li>
                 ))}

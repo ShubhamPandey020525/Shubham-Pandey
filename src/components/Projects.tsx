@@ -33,7 +33,7 @@ export const Projects = () => {
                   <h3 className="font-display text-xl font-bold mb-1 text-slate-900">
                     {project.title}
                   </h3>
-                  <span className="text-slate-400 font-mono text-sm">
+                  <span className="text-slate-900 font-mono text-sm">
                     {project.date}
                   </span>
                 </div>
@@ -41,7 +41,7 @@ export const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full text-accent hover:text-accentAlt hover:bg-slate-100 hover:shadow-glow transition-all"
+                  className="p-2 rounded-full text-slate-900 hover:text-slate-600 hover:bg-slate-100 hover:shadow-glow transition-all"
                 >
                   <Github className="w-5 h-5" />
                 </a>
@@ -50,21 +50,21 @@ export const Projects = () => {
                 {project.stack.map((tech, j) => (
                   <span
                     key={j}
-                    className="px-2.5 py-0.5 glass-card !border-slate-200 !bg-slate-100 text-xs font-mono text-accent"
+                    className="px-2.5 py-0.5 glass-card !border-slate-200 !bg-slate-100 text-xs font-mono text-slate-900"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-              <ul className="space-y-2 text-slate-600 text-sm flex-1">
+              <ul className="space-y-2 text-slate-900 text-sm flex-1">
                 {project.bullets.map((bullet, j) => (
                   <li key={j} className="flex gap-2">
-                    <span className="text-accent mt-1">•</span>
+                    <span className="text-slate-900 mt-1">•</span>
                     <span
                       dangerouslySetInnerHTML={{
                         __html: bullet.replace(
                           /<strong>([^<]+)<\/strong>/g,
-                          '<strong class="text-accent font-semibold">$1</strong>'
+                          '<strong class="text-slate-900 font-semibold">$1</strong>'
                         ),
                       }}
                     />

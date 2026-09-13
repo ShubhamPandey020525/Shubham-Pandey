@@ -29,7 +29,7 @@ export const Experience = () => {
               className="relative"
             >
               <div className="absolute -left-12 w-10 h-10 bg-white border-3 border-accent rounded-full flex items-center justify-center shadow-glow">
-                <Briefcase className="w-5 h-5 text-accent" />
+                <Briefcase className="w-5 h-5 text-slate-900" />
               </div>
               <div className="glass-card p-7">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
@@ -37,18 +37,18 @@ export const Experience = () => {
                   <h3 className="font-display text-2xl font-bold mb-2 text-slate-900">
                     {exp.company}
                   </h3>
-                  <p className="text-accent font-semibold text-lg">{exp.role}</p>
+                  <p className="text-slate-900 font-semibold text-lg">{exp.role}</p>
                 </div>
                 <div>
-                  <span className="text-slate-400 font-mono text-base">
+                  <span className="text-slate-900 font-mono text-base">
                     {exp.date}
                   </span>
                 </div>
               </div>
-              <ul className="space-y-3 text-slate-600 text-base">
+              <ul className="space-y-3 text-slate-900 text-base">
                 {exp.bullets.map((bullet, j) => (
                   <li key={j} className="flex gap-3">
-                    <span className="text-accent mt-1.5">•</span>
+                    <span className="text-slate-900 mt-1.5">•</span>
                     <span>{bullet}</span>
                   </li>
                 ))}

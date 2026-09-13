@@ -30,7 +30,7 @@ export const Summary = () => {
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
         >
           <motion.div variants={fadeUp} transition={{ duration: 0.6 }}>
-            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+            <p className="text-xl text-slate-900 leading-relaxed mb-8">
               {professionalSummary.split(/(AI\/ML Engineer|Generative AI|Agentic AI|RAG|Computer Vision|Deep Learning|Machine Learning)/).map((part, i) => {
                 const isHighlight = [
                   "AI/ML Engineer",
@@ -44,7 +44,7 @@ export const Summary = () => {
                 return (
                   <span
                     key={i}
-                    className={isHighlight ? "text-accent font-semibold" : ""}
+                    className={isHighlight ? "text-slate-900 font-semibold" : ""}
                   >
                     {part}
                   </span>
@@ -59,7 +59,7 @@ export const Summary = () => {
                 className="flex items-center gap-4 glass-card p-6"
               >
                 {highlight.icon}
-                <span className="text-slate-700 text-lg font-medium">{highlight.text}</span>
+                <span className="text-slate-900 text-lg font-medium">{highlight.text}</span>
               </div>
             ))}
           </motion.div>

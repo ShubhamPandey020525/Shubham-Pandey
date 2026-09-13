@@ -18,9 +18,9 @@ export const Certifications = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-slate-400 text-lg mb-10 text-center max-w-2xl mx-auto"
+          className="text-slate-900 text-lg mb-10 text-center max-w-2xl mx-auto"
         >
-          I have completed <strong className="text-slate-900">18+ professional certifications</strong>. To view the full list, please visit my <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-accent underline font-semibold hover:text-accentAlt transition-colors">LinkedIn profile</a>. Below are my featured certifications and industry job simulations in the AI/ML field.
+          I have completed <strong className="text-slate-900">18+ professional certifications</strong>. To view the full list, please visit my <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-semibold hover:text-slate-600 transition-colors">LinkedIn profile</a>. Below are my featured certifications and industry job simulations in the AI/ML field.
         </motion.p>
         <motion.div
           initial="hidden"
@@ -38,7 +38,7 @@ export const Certifications = () => {
               className="relative group"
             >
               <div className="absolute -left-12 w-10 h-10 bg-white border-3 border-accent rounded-full flex items-center justify-center shadow-glow z-10 group-hover:scale-110 transition-transform">
-                <Award className="w-5 h-5 text-accent" />
+                <Award className="w-5 h-5 text-slate-900" />
               </div>
               <a
                 href={cert.verifyLink}
@@ -48,13 +48,13 @@ export const Certifications = () => {
               >
               <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
                 <div>
-                  <h3 className="font-semibold text-xl group-hover:text-accent transition-colors text-slate-900">
+                  <h3 className="font-semibold text-xl group-hover:text-slate-900 transition-colors text-slate-900">
                     {cert.title}
                   </h3>
-                  <p className="text-slate-400 text-base">{cert.issuer}</p>
+                  <p className="text-slate-900 text-base">{cert.issuer}</p>
                 </div>
                 <span
-                  className="flex items-center gap-2 text-accent text-base font-semibold px-5 py-2 glass-card group-hover:text-accentAlt group-hover:shadow-glow transition-all"
+                  className="flex items-center gap-2 text-slate-900 text-base font-semibold px-5 py-2 glass-card group-hover:text-slate-600 group-hover:shadow-glow transition-all"
                 >
                   Verify
                   <ExternalLink className="w-4 h-4" />

@@ -28,7 +28,7 @@ export const Skills = () => {
                 {skills.map((skill, j) => (
                   <span
                     key={j}
-                    className="px-5 py-2 glass-card text-base font-mono text-slate-600 hover:text-accent hover:border-accent/50 hover:shadow-glow transition-all cursor-default"
+                    className="px-5 py-2 glass-card text-base font-mono text-slate-900 hover:text-slate-900 hover:border-accent/50 hover:shadow-glow transition-all cursor-default"
                   >
                     {skill}
                   </span>

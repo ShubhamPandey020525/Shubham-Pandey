@@ -29,10 +29,10 @@ export const Achievements = () => {
               className="relative"
             >
               <div className="absolute -left-12 w-10 h-10 bg-white border-3 border-accent rounded-full flex items-center justify-center shadow-glow">
-                <Sparkles className="w-5 h-5 text-accent" />
+                <Sparkles className="w-5 h-5 text-slate-900" />
               </div>
               <div className="flex gap-4 items-start glass-card p-6">
-                <span className="text-slate-700 text-lg">{achievement}</span>
+                <span className="text-slate-900 text-lg">{achievement}</span>
               </div>
             </motion.li>
           ))}
