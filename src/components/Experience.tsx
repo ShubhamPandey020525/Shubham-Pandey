@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
 import { experience } from "../data";
 import { SectionHeading } from "./SectionHeading";
 
@@ -12,7 +11,7 @@ export const Experience = () => {
   return (
     <section className="py-16 px-6" id="experience">
       <div className="max-w-5xl mx-auto">
-        <SectionHeading title="Experience" id="experience" />
+        <SectionHeading title="Work Experience" id="experience" />
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -27,37 +26,17 @@ export const Experience = () => {
               transition={{ duration: 0.6 }}
               className="bg-white border border-navy/15 rounded-2xl p-7 hover:shadow-lg transition-all hover:-translate-y-1"
             >
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6 mb-6">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
                 <div>
                   <h3 className="font-display text-2xl font-bold mb-2">
                     {exp.company}
                   </h3>
                   <p className="text-navy font-semibold text-lg">{exp.role}</p>
                 </div>
-                <div className="flex flex-col items-end gap-3">
+                <div>
                   <span className="text-slate-500 font-mono text-base">
                     {exp.date}
                   </span>
-                  {exp.certificateLink && (
-                    <a
-                      href={exp.certificateLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ backgroundColor: '#ffffff' }}
-                      onMouseOver={(e) => {
-                        e.currentTarget.style.backgroundColor = '#1e4a8a';
-                        e.currentTarget.style.borderColor = '#1e4a8a';
-                      }}
-                      onMouseOut={(e) => {
-                        e.currentTarget.style.backgroundColor = '#ffffff';
-                        e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.3)';
-                      }}
-                      className="flex items-center gap-2 px-5 py-2 border border-navy/30 rounded-full text-navy hover:text-white transition-all font-semibold text-sm"
-                    >
-                      View Certificate
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  )}
                 </div>
               </div>
               <ul className="space-y-3 text-slate-700 text-base">

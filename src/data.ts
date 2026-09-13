@@ -40,9 +40,12 @@ export const experience = [
       "Developed ML models for early dropout/low-performance detection and fee-defaulter prediction using attendance, academic, and payment data, with results visualized via an interactive analytics dashboard.",
     ],
   },
+];
+
+export const jobSimulations = [
   {
     company: "BCG X (Boston Consulting Group)",
-    role: "GenAI Project (Forage Job Simulation)",
+    role: "GenAI Job Simulation (Forage)",
     date: "June 2026",
     certificateLink:
       "https://www.theforage.com/completion-certificates/SKZxezskWgmFjRvj9/gabev3vXhuACr48eb_SKZxezskWgmFjRvj9_6a3112fb5c6812dbed7841e3_1781691472856_completion_certificate.pdf",
@@ -55,7 +58,7 @@ export const experience = [
   },
   {
     company: "JPMorgan Chase & Co.",
-    role: "Quantitative Research Project (Forage Job Simulation)",
+    role: "Quantitative Research Job Simulation (Forage)",
     date: "June 2026",
     certificateLink:
       "https://www.theforage.com/completion-certificates/Sj7temL583QAYpHXD/bWqaecPDbYAwSDqJy_Sj7temL583QAYpHXD_6a3112fb5c6812dbed7841e3_1781850143969_completion_certificate.pdf",
