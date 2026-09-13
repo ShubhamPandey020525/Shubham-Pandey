@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Briefcase } from "lucide-react";
 import { experience } from "../data";
 import { SectionHeading } from "./SectionHeading";
 
@@ -17,15 +18,20 @@ export const Experience = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
           transition={{ staggerChildren: 0.25 }}
-          className="space-y-8"
+          className="relative pl-12 space-y-10"
         >
+          <div className="absolute left-5 top-2 bottom-0 w-1 bg-gradient-to-b from-accent/50 to-transparent rounded-full" />
           {experience.map((exp, i) => (
             <motion.div
               key={i}
               variants={fadeUp}
               transition={{ duration: 0.6 }}
-              className="glass-card p-7"
+              className="relative"
             >
+              <div className="absolute -left-12 w-10 h-10 bg-white border-3 border-accent rounded-full flex items-center justify-center shadow-glow">
+                <Briefcase className="w-5 h-5 text-accent" />
+              </div>
+              <div className="glass-card p-7">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
                 <div>
                   <h3 className="font-display text-2xl font-bold mb-2 text-slate-900">
@@ -47,6 +53,7 @@ export const Experience = () => {
                   </li>
                 ))}
               </ul>
+              </div>
             </motion.div>
           ))}
         </motion.div>

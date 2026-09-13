@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Award } from "lucide-react";
 import { certifications, personalInfo } from "../data";
 import { SectionHeading } from "./SectionHeading";
 
@@ -27,18 +27,25 @@ export const Certifications = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
           transition={{ staggerChildren: 0.15 }}
-          className="space-y-4"
+          className="relative pl-12 space-y-8"
         >
+          <div className="absolute left-5 top-2 bottom-0 w-1 bg-gradient-to-b from-accent/50 to-transparent rounded-full" />
           {certifications.map((cert, i) => (
-            <motion.a
+            <motion.div
               key={i}
-              href={cert.verifyLink}
-              target="_blank"
-              rel="noopener noreferrer"
               variants={fadeUp}
               transition={{ duration: 0.5 }}
-              className="block glass-card p-7 group"
+              className="relative group"
             >
+              <div className="absolute -left-12 w-10 h-10 bg-white border-3 border-accent rounded-full flex items-center justify-center shadow-glow z-10 group-hover:scale-110 transition-transform">
+                <Award className="w-5 h-5 text-accent" />
+              </div>
+              <a
+                href={cert.verifyLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block glass-card p-7 transition-all"
+              >
               <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
                 <div>
                   <h3 className="font-semibold text-xl group-hover:text-accent transition-colors text-slate-900">
@@ -53,7 +60,8 @@ export const Certifications = () => {
                   <ExternalLink className="w-4 h-4" />
                 </span>
               </div>
-            </motion.a>
+              </a>
+            </motion.div>
           ))}
         </motion.div>
       </div>
