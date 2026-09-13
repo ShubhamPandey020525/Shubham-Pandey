@@ -10,9 +10,7 @@ const fadeUp = {
 export const Hero = () => {
   return (
     <section className="pt-32 pb-24 px-4 sm:px-6 relative min-h-screen flex flex-col" id="home">
-      {/* Decorative circles */}
-      <div className="absolute top-20 right-5 sm:right-20 w-60 sm:w-80 h-60 sm:h-80 bg-accent/20 rounded-full blur-3xl animate-pulse-glow" />
-      <div className="absolute bottom-10 left-5 sm:left-20 w-60 sm:w-96 h-60 sm:h-96 bg-accentAlt/20 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }} />
+      {/* Decorative background elements removed for clean light mode */}
       
       <div className="max-w-7xl mx-auto relative z-10 flex-1 flex flex-col justify-center">
         <motion.div
