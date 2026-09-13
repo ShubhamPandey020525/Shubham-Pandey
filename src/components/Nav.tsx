@@ -48,10 +48,10 @@ export const Nav = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl border-b border-white/10 shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200 shadow-sm"
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-        <div className="font-display font-bold text-3xl tracking-tight text-white">
+        <div className="font-display font-bold text-3xl tracking-tight text-slate-900">
           <span className="text-accent">S</span>P
         </div>
         
@@ -82,7 +82,7 @@ export const Nav = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden p-2 text-slate-300 hover:text-accent transition-colors"
+          className="md:hidden p-2 text-slate-600 hover:text-accent transition-colors"
         >
           {isMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
         </button>
@@ -94,7 +94,7 @@ export const Nav = () => {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
-          className="md:hidden bg-surfaceLight/95 backdrop-blur-xl border-t border-white/10"
+          className="md:hidden bg-slate-50/95 backdrop-blur-xl border-t border-slate-200"
         >
           <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) => (
@@ -104,8 +104,8 @@ export const Nav = () => {
                 onClick={() => setIsMenuOpen(false)}
                 className={`block px-4 py-3 rounded-xl font-body font-semibold transition-colors ${
                   (link.href === "#" && activeSection === "") || activeSection === link.href.slice(1)
-                    ? "bg-white/5 text-accent border border-white/10"
-                    : "text-slate-400 hover:bg-white/5 hover:text-accent"
+                    ? "bg-slate-100 text-accent border border-slate-200"
+                    : "text-slate-400 hover:bg-slate-100 hover:text-accent"
                 }`}
               >
                 {link.name}

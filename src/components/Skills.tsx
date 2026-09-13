@@ -21,14 +21,14 @@ export const Skills = () => {
         >
           {Object.entries(technicalSkills).map(([category, skills], i) => (
             <motion.div key={i} variants={fadeUp} transition={{ duration: 0.6 }} className="glass-card p-6">
-              <h3 className="font-display text-xl font-semibold mb-4 text-white">
+              <h3 className="font-display text-xl font-semibold mb-4 text-slate-900">
                 {category}
               </h3>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill, j) => (
                   <span
                     key={j}
-                    className="px-5 py-2 glass-card text-base font-mono text-slate-300 hover:text-accent hover:border-accent/50 hover:shadow-glow transition-all cursor-default"
+                    className="px-5 py-2 glass-card text-base font-mono text-slate-600 hover:text-accent hover:border-accent/50 hover:shadow-glow transition-all cursor-default"
                   >
                     {skill}
                   </span>

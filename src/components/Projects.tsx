@@ -30,7 +30,7 @@ export const Projects = () => {
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent to-accentAlt opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="flex justify-between items-start mb-4">
                 <div>
-                  <h3 className="font-display text-xl font-bold mb-1 text-white">
+                  <h3 className="font-display text-xl font-bold mb-1 text-slate-900">
                     {project.title}
                   </h3>
                   <span className="text-slate-400 font-mono text-sm">
@@ -41,7 +41,7 @@ export const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full text-slate-400 hover:text-accent hover:bg-white/5 hover:shadow-glow transition-all"
+                  className="p-2 rounded-full text-slate-400 hover:text-accent hover:bg-slate-100 hover:shadow-glow transition-all"
                 >
                   <Github className="w-5 h-5" />
                 </a>
@@ -50,13 +50,13 @@ export const Projects = () => {
                 {project.stack.map((tech, j) => (
                   <span
                     key={j}
-                    className="px-2.5 py-0.5 glass-card !border-white/10 !bg-white/5 text-xs font-mono text-accent"
+                    className="px-2.5 py-0.5 glass-card !border-slate-200 !bg-slate-100 text-xs font-mono text-accent"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-              <ul className="space-y-2 text-slate-300 text-sm flex-1">
+              <ul className="space-y-2 text-slate-600 text-sm flex-1">
                 {project.bullets.map((bullet, j) => (
                   <li key={j} className="flex gap-2">
                     <span className="text-accent mt-1">•</span>

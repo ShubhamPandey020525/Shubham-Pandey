@@ -30,7 +30,7 @@ export const JobSimulations = () => {
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6 mb-6">
                 <div>
                   <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <h3 className="font-display text-2xl font-bold text-white">
+                    <h3 className="font-display text-2xl font-bold text-slate-900">
                       {sim.company}
                     </h3>
                     <span className="flex items-center gap-1.5 px-3 py-0.5 bg-accent/10 border border-accent/20 rounded-full text-xs font-mono text-accent font-semibold">
@@ -57,7 +57,7 @@ export const JobSimulations = () => {
                   )}
                 </div>
               </div>
-              <ul className="space-y-3 text-slate-300 text-base">
+              <ul className="space-y-3 text-slate-600 text-base">
                 {sim.bullets.map((bullet, j) => (
                   <li key={j} className="flex gap-3">
                     <span className="text-accent mt-1.5">•</span>

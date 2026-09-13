@@ -28,7 +28,7 @@ export const Experience = () => {
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
                 <div>
-                  <h3 className="font-display text-2xl font-bold mb-2 text-white">
+                  <h3 className="font-display text-2xl font-bold mb-2 text-slate-900">
                     {exp.company}
                   </h3>
                   <p className="text-accent font-semibold text-lg">{exp.role}</p>
@@ -39,7 +39,7 @@ export const Experience = () => {
                   </span>
                 </div>
               </div>
-              <ul className="space-y-3 text-slate-300 text-base">
+              <ul className="space-y-3 text-slate-600 text-base">
                 {exp.bullets.map((bullet, j) => (
                   <li key={j} className="flex gap-3">
                     <span className="text-accent mt-1.5">•</span>

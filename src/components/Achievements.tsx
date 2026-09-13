@@ -28,7 +28,7 @@ export const Achievements = () => {
               className="flex gap-4 items-start glass-card p-6"
             >
               <Sparkles className="w-6 h-6 text-accent shrink-0" />
-              <span className="text-slate-200 text-lg">{achievement}</span>
+              <span className="text-slate-700 text-lg">{achievement}</span>
             </motion.li>
           ))}
         </motion.div>

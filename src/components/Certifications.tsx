@@ -20,7 +20,7 @@ export const Certifications = () => {
           transition={{ duration: 0.5 }}
           className="text-slate-400 text-lg mb-10 text-center max-w-2xl mx-auto"
         >
-          I have completed <strong className="text-white">18+ professional certifications</strong>. To view the full list, please visit my <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-accent underline font-semibold hover:text-accentAlt transition-colors">LinkedIn profile</a>. Below are my featured certifications and industry job simulations in the AI/ML field.
+          I have completed <strong className="text-slate-900">18+ professional certifications</strong>. To view the full list, please visit my <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-accent underline font-semibold hover:text-accentAlt transition-colors">LinkedIn profile</a>. Below are my featured certifications and industry job simulations in the AI/ML field.
         </motion.p>
         <motion.div
           initial="hidden"
@@ -41,13 +41,13 @@ export const Certifications = () => {
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
                 <div>
-                  <h3 className="font-semibold text-xl group-hover:text-accent transition-colors text-white">
+                  <h3 className="font-semibold text-xl group-hover:text-accent transition-colors text-slate-900">
                     {cert.title}
                   </h3>
                   <p className="text-slate-400 text-base">{cert.issuer}</p>
                 </div>
                 <span
-                  className="flex items-center gap-2 text-slate-300 text-base font-semibold px-5 py-2 glass-card group-hover:text-accent group-hover:shadow-glow transition-all"
+                  className="flex items-center gap-2 text-slate-600 text-base font-semibold px-5 py-2 glass-card group-hover:text-accent group-hover:shadow-glow transition-all"
                 >
                   Verify
                   <ExternalLink className="w-4 h-4" />
