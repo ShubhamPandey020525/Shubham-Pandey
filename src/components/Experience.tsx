@@ -24,25 +24,25 @@ export const Experience = () => {
               key={i}
               variants={fadeUp}
               transition={{ duration: 0.6 }}
-              className="bg-white border border-navy/15 rounded-2xl p-7 hover:shadow-lg transition-all hover:-translate-y-1"
+              className="glass-card p-7"
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
                 <div>
-                  <h3 className="font-display text-2xl font-bold mb-2">
+                  <h3 className="font-display text-2xl font-bold mb-2 text-white">
                     {exp.company}
                   </h3>
-                  <p className="text-navy font-semibold text-lg">{exp.role}</p>
+                  <p className="text-accent font-semibold text-lg">{exp.role}</p>
                 </div>
                 <div>
-                  <span className="text-slate-500 font-mono text-base">
+                  <span className="text-slate-400 font-mono text-base">
                     {exp.date}
                   </span>
                 </div>
               </div>
-              <ul className="space-y-3 text-slate-700 text-base">
+              <ul className="space-y-3 text-slate-300 text-base">
                 {exp.bullets.map((bullet, j) => (
                   <li key={j} className="flex gap-3">
-                    <span className="text-navy mt-1.5">•</span>
+                    <span className="text-accent mt-1.5">•</span>
                     <span>{bullet}</span>
                   </li>
                 ))}

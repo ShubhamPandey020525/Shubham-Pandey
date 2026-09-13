@@ -25,23 +25,23 @@ export const JobSimulations = () => {
               key={i}
               variants={fadeUp}
               transition={{ duration: 0.6 }}
-              className="bg-white border border-navy/15 rounded-2xl p-7 hover:shadow-lg transition-all hover:-translate-y-1"
+              className="glass-card p-7"
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6 mb-6">
                 <div>
                   <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <h3 className="font-display text-2xl font-bold">
+                    <h3 className="font-display text-2xl font-bold text-white">
                       {sim.company}
                     </h3>
-                    <span className="flex items-center gap-1.5 px-3 py-0.5 bg-navy/10 border border-navy/20 rounded-full text-xs font-mono text-navy font-semibold">
+                    <span className="flex items-center gap-1.5 px-3 py-0.5 bg-accent/10 border border-accent/20 rounded-full text-xs font-mono text-accent font-semibold">
                       <Briefcase className="w-3.5 h-3.5" />
                       Job Simulation
                     </span>
                   </div>
-                  <p className="text-navy font-semibold text-lg">{sim.role}</p>
+                  <p className="text-accentAlt font-semibold text-lg">{sim.role}</p>
                 </div>
                 <div className="flex flex-col items-end gap-3">
-                  <span className="text-slate-500 font-mono text-base">
+                  <span className="text-slate-400 font-mono text-base">
                     {sim.date}
                   </span>
                   {sim.certificateLink && (
@@ -49,27 +49,18 @@ export const JobSimulations = () => {
                       href={sim.certificateLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ backgroundColor: '#ffffff' }}
-                      onMouseOver={(e) => {
-                        e.currentTarget.style.backgroundColor = '#1e4a8a';
-                        e.currentTarget.style.borderColor = '#1e4a8a';
-                      }}
-                      onMouseOut={(e) => {
-                        e.currentTarget.style.backgroundColor = '#ffffff';
-                        e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.3)';
-                      }}
-                      className="flex items-center gap-2 px-5 py-2 border border-navy/30 rounded-full text-navy hover:text-white transition-all font-semibold text-sm"
+                      className="flex items-center gap-2 px-5 py-2 glass-card hover:text-accent transition-all font-semibold text-sm group"
                     >
                       View Certificate
-                      <ExternalLink className="w-4 h-4" />
+                      <ExternalLink className="w-4 h-4 group-hover:text-accent transition-colors" />
                     </a>
                   )}
                 </div>
               </div>
-              <ul className="space-y-3 text-slate-700 text-base">
+              <ul className="space-y-3 text-slate-300 text-base">
                 {sim.bullets.map((bullet, j) => (
                   <li key={j} className="flex gap-3">
-                    <span className="text-navy mt-1.5">•</span>
+                    <span className="text-accent mt-1.5">•</span>
                     <span>{bullet}</span>
                   </li>
                 ))}

@@ -25,10 +25,10 @@ export const Achievements = () => {
               key={i}
               variants={fadeUp}
               transition={{ duration: 0.6 }}
-              className="flex gap-4 items-start bg-white border border-navy/20 rounded-2xl p-6"
+              className="flex gap-4 items-start glass-card p-6"
             >
-              <Sparkles className="w-6 h-6 text-navy shrink-0" />
-              <span className="text-slate-800 text-lg">{achievement}</span>
+              <Sparkles className="w-6 h-6 text-accent shrink-0" />
+              <span className="text-slate-200 text-lg">{achievement}</span>
             </motion.li>
           ))}
         </motion.div>

@@ -25,14 +25,15 @@ export const Projects = () => {
               key={i}
               variants={fadeUp}
               transition={{ duration: 0.6 }}
-              className="bg-white border border-navy/15 rounded-2xl p-6 hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col"
+              className="glass-card p-6 flex flex-col relative overflow-hidden group"
             >
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent to-accentAlt opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="flex justify-between items-start mb-4">
                 <div>
-                  <h3 className="font-display text-xl font-bold mb-1">
+                  <h3 className="font-display text-xl font-bold mb-1 text-white">
                     {project.title}
                   </h3>
-                  <span className="text-slate-500 font-mono text-sm">
+                  <span className="text-slate-400 font-mono text-sm">
                     {project.date}
                   </span>
                 </div>
@@ -40,10 +41,7 @@ export const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ backgroundColor: 'rgba(20, 52, 100, 0.1)' }}
-                  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#1e4a8a')}
-                  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = 'rgba(20, 52, 100, 0.1)')}
-                  className="p-2 rounded-full text-slate-600 hover:text-white transition-all"
+                  className="p-2 rounded-full text-slate-400 hover:text-accent hover:bg-white/5 hover:shadow-glow transition-all"
                 >
                   <Github className="w-5 h-5" />
                 </a>
@@ -52,21 +50,21 @@ export const Projects = () => {
                 {project.stack.map((tech, j) => (
                   <span
                     key={j}
-                    className="px-2.5 py-0.5 bg-navy/10 border border-navy/30 rounded-full text-xs font-mono text-navy"
+                    className="px-2.5 py-0.5 glass-card !border-white/10 !bg-white/5 text-xs font-mono text-accent"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-              <ul className="space-y-2 text-slate-700 text-sm flex-1">
+              <ul className="space-y-2 text-slate-300 text-sm flex-1">
                 {project.bullets.map((bullet, j) => (
                   <li key={j} className="flex gap-2">
-                    <span className="text-navy mt-1">•</span>
+                    <span className="text-accent mt-1">•</span>
                     <span
                       dangerouslySetInnerHTML={{
                         __html: bullet.replace(
                           /<strong>([^<]+)<\/strong>/g,
-                          '<strong class="text-navy font-semibold">$1</strong>'
+                          '<strong class="text-accent font-semibold">$1</strong>'
                         ),
                       }}
                     />

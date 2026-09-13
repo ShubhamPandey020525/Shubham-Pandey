@@ -18,9 +18,9 @@ export const Certifications = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-slate-600 text-lg mb-10 text-center max-w-2xl mx-auto"
+          className="text-slate-400 text-lg mb-10 text-center max-w-2xl mx-auto"
         >
-          I have completed <strong>18+ professional certifications</strong>. To view the full list, please visit my <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-semibold hover:text-blue-800">LinkedIn profile</a>. Below are my featured certifications and industry job simulations in the AI/ML field.
+          I have completed <strong className="text-white">18+ professional certifications</strong>. To view the full list, please visit my <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-accent underline font-semibold hover:text-accentAlt transition-colors">LinkedIn profile</a>. Below are my featured certifications and industry job simulations in the AI/ML field.
         </motion.p>
         <motion.div
           initial="hidden"
@@ -37,26 +37,17 @@ export const Certifications = () => {
               rel="noopener noreferrer"
               variants={fadeUp}
               transition={{ duration: 0.5 }}
-              className="block bg-white border border-navy/15 rounded-2xl p-7 hover:border-navy hover:shadow-lg transition-all group hover:-translate-y-1"
+              className="block glass-card p-7 group"
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
                 <div>
-                  <h3 className="font-semibold text-xl group-hover:text-navy transition-colors text-slate-800">
+                  <h3 className="font-semibold text-xl group-hover:text-accent transition-colors text-white">
                     {cert.title}
                   </h3>
-                  <p className="text-slate-500 text-base">{cert.issuer}</p>
+                  <p className="text-slate-400 text-base">{cert.issuer}</p>
                 </div>
                 <span
-                  style={{ backgroundColor: '#ffffff' }}
-                  onMouseOver={(e) => {
-                    e.currentTarget.style.backgroundColor = '#1e4a8a';
-                    e.currentTarget.style.borderColor = '#1e4a8a';
-                  }}
-                  onMouseOut={(e) => {
-                    e.currentTarget.style.backgroundColor = '#ffffff';
-                    e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.3)';
-                  }}
-                  className="flex items-center gap-2 text-navy text-base font-semibold px-5 py-2 border border-navy/30 rounded-full hover:text-white transition-all"
+                  className="flex items-center gap-2 text-slate-300 text-base font-semibold px-5 py-2 glass-card group-hover:text-accent group-hover:shadow-glow transition-all"
                 >
                   Verify
                   <ExternalLink className="w-4 h-4" />

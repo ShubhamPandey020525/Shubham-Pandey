@@ -15,8 +15,8 @@ export const SectionHeading = ({ title, id }: SectionHeadingProps) => {
       transition={{ duration: 0.6 }}
       className="font-display text-4xl md:text-5xl font-bold mb-10 flex items-center gap-4"
     >
-      {title}
-      <div className="h-1.5 flex-1 max-w-60 bg-gradient-to-r from-navy to-navyLight/0 rounded-full" />
+      <span className="gradient-text">{title}</span>
+      <div className="h-1.5 flex-1 max-w-60 bg-gradient-to-r from-accent via-accentAlt to-transparent rounded-full opacity-50" />
     </motion.h2>
   );
 };

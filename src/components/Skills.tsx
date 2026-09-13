@@ -20,24 +20,15 @@ export const Skills = () => {
           className="space-y-6"
         >
           {Object.entries(technicalSkills).map(([category, skills], i) => (
-            <motion.div key={i} variants={fadeUp} transition={{ duration: 0.6 }} className="bg-white border border-navy/20 rounded-2xl p-6">
-              <h3 className="font-display text-xl font-semibold mb-4 text-slate-800">
+            <motion.div key={i} variants={fadeUp} transition={{ duration: 0.6 }} className="glass-card p-6">
+              <h3 className="font-display text-xl font-semibold mb-4 text-white">
                 {category}
               </h3>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill, j) => (
                   <span
                     key={j}
-                    style={{ backgroundColor: '#ffffff' }}
-                    onMouseOver={(e) => {
-                      e.currentTarget.style.backgroundColor = '#1e4a8a';
-                      e.currentTarget.style.borderColor = '#1e4a8a';
-                    }}
-                    onMouseOut={(e) => {
-                      e.currentTarget.style.backgroundColor = '#ffffff';
-                      e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.3)';
-                    }}
-                    className="px-5 py-2 border border-navy/30 rounded-full text-base font-mono text-navy hover:text-white transition-all cursor-default"
+                    className="px-5 py-2 glass-card text-base font-mono text-slate-300 hover:text-accent hover:border-accent/50 hover:shadow-glow transition-all cursor-default"
                   >
                     {skill}
                   </span>

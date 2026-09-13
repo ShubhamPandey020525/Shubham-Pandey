@@ -3,76 +3,41 @@ import { personalInfo } from "../data";
 
 export const Footer = () => {
   return (
-    <footer className="py-12 sm:py-16 px-4 sm:px-6 border-t border-navy/15">
-      <div className="max-w-7xl mx-auto">
+    <footer className="py-12 sm:py-16 px-4 sm:px-6 relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col gap-8 items-center">
-          <div className="font-display font-bold text-3xl sm:text-4xl">
-            <span className="text-navy">S</span>P
+          <div className="font-display font-bold text-3xl sm:text-4xl text-white">
+            <span className="text-accent">S</span>P
           </div>
-          <div className="flex gap-4 sm:gap-6 lg:gap-10 text-slate-600">
+          <div className="flex gap-4 sm:gap-6 lg:gap-10 text-slate-400">
             <a
               href={`tel:${personalInfo.phone}`}
-              style={{ backgroundColor: '#ffffff' }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.backgroundColor = '#1e4a8a';
-                e.currentTarget.style.borderColor = '#1e4a8a';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.backgroundColor = '#ffffff';
-                e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.2)';
-              }}
-              className="p-3 sm:p-4 border border-navy/20 rounded-full hover:text-white transition-all"
+              className="p-3 sm:p-4 glass-card hover:text-accent hover:shadow-glow transition-all group"
             >
-              <Phone className="w-6 h-6 sm:w-8 sm:h-8" />
+              <Phone className="w-6 h-6 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform" />
             </a>
             <a
               href={`mailto:${personalInfo.email}`}
-              style={{ backgroundColor: '#ffffff' }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.backgroundColor = '#1e4a8a';
-                e.currentTarget.style.borderColor = '#1e4a8a';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.backgroundColor = '#ffffff';
-                e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.2)';
-              }}
-              className="p-3 sm:p-4 border border-navy/20 rounded-full hover:text-white transition-all"
+              className="p-3 sm:p-4 glass-card hover:text-accent hover:shadow-glow transition-all group"
             >
-              <Mail className="w-6 h-6 sm:w-8 sm:h-8" />
+              <Mail className="w-6 h-6 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform" />
             </a>
             <a
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ backgroundColor: '#ffffff' }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.backgroundColor = '#1e4a8a';
-                e.currentTarget.style.borderColor = '#1e4a8a';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.backgroundColor = '#ffffff';
-                e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.2)';
-              }}
-              className="p-3 sm:p-4 border border-navy/20 rounded-full hover:text-white transition-all"
+              className="p-3 sm:p-4 glass-card hover:text-accent hover:shadow-glow transition-all group"
             >
-              <Linkedin className="w-6 h-6 sm:w-8 sm:h-8" />
+              <Linkedin className="w-6 h-6 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform" />
             </a>
             <a
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ backgroundColor: '#ffffff' }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.backgroundColor = '#1e4a8a';
-                e.currentTarget.style.borderColor = '#1e4a8a';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.backgroundColor = '#ffffff';
-                e.currentTarget.style.borderColor = 'rgba(20, 52, 100, 0.2)';
-              }}
-              className="p-3 sm:p-4 border border-navy/20 rounded-full hover:text-white transition-all"
+              className="p-3 sm:p-4 glass-card hover:text-accent hover:shadow-glow transition-all group"
             >
-              <Github className="w-6 h-6 sm:w-8 sm:h-8" />
+              <Github className="w-6 h-6 sm:w-8 sm:h-8 group-hover:scale-110 transition-transform" />
             </a>
           </div>
           <p className="text-slate-500 text-base sm:text-lg lg:text-xl">

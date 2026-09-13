@@ -20,7 +20,7 @@ const highlights = [
 export const Summary = () => {
   return (
     <section className="py-16 px-6" id="about">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <SectionHeading title="About" id="about" />
         <motion.div
           initial="hidden"
@@ -30,7 +30,7 @@ export const Summary = () => {
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
         >
           <motion.div variants={fadeUp} transition={{ duration: 0.6 }}>
-            <p className="text-xl text-slate-700 leading-relaxed mb-8">
+            <p className="text-xl text-slate-300 leading-relaxed mb-8">
               {professionalSummary.split(/(AI\/ML Engineer|Generative AI|Agentic AI|RAG|Computer Vision|Deep Learning|Machine Learning)/).map((part, i) => {
                 const isHighlight = [
                   "AI/ML Engineer",
@@ -44,7 +44,7 @@ export const Summary = () => {
                 return (
                   <span
                     key={i}
-                    className={isHighlight ? "text-navy font-semibold" : ""}
+                    className={isHighlight ? "text-accent font-semibold" : ""}
                   >
                     {part}
                   </span>
@@ -56,10 +56,10 @@ export const Summary = () => {
             {highlights.map((highlight, i) => (
               <div
                 key={i}
-                className="flex items-center gap-4 bg-white border border-navy/20 rounded-2xl p-6"
+                className="flex items-center gap-4 glass-card p-6"
               >
                 {highlight.icon}
-                <span className="text-slate-800 text-lg font-medium">{highlight.text}</span>
+                <span className="text-slate-200 text-lg font-medium">{highlight.text}</span>
               </div>
             ))}
           </motion.div>
